@@ -1,0 +1,680 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		C40D11E92505BF5300E30EFA /* GWExcelHeaderLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */; };
+		C436F67025020CD000E65BEB /* GWExcelShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C436F66F25020CD000E65BEB /* GWExcelShadowView.m */; };
+		C4768C6B2500A14200D64FA7 /* UIView+GW_AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C672500A14100D64FA7 /* UIView+GW_AutoLayout.m */; };
+		C4768C762500EBED00D64FA7 /* GWExcelHeaderLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C742500EBED00D64FA7 /* GWExcelHeaderLeftCell.m */; };
+		C4768C7B2500EC0D00D64FA7 /* GWExcelHeaderRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C792500EC0D00D64FA7 /* GWExcelHeaderRightCell.m */; };
+		C4768C7F2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C7E2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m */; };
+		C4768C822500ECD100D64FA7 /* GWExcelConcentRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C812500ECD100D64FA7 /* GWExcelConcentRightCell.m */; };
+		C4EEF0E924FF732C0040F496 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0E824FF732C0040F496 /* AppDelegate.m */; };
+		C4EEF0EF24FF732C0040F496 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0EE24FF732C0040F496 /* ViewController.m */; };
+		C4EEF0F224FF732C0040F496 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F024FF732C0040F496 /* Main.storyboard */; };
+		C4EEF0F424FF73300040F496 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F324FF73300040F496 /* Assets.xcassets */; };
+		C4EEF0F724FF73300040F496 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F524FF73300040F496 /* LaunchScreen.storyboard */; };
+		C4EEF0FA24FF73300040F496 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0F924FF73300040F496 /* main.m */; };
+		C4EEF10424FF73300040F496 /* GWExcelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF10324FF73300040F496 /* GWExcelTests.m */; };
+		C4EEF10F24FF73300040F496 /* GWExcelUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF10E24FF73300040F496 /* GWExcelUITests.m */; };
+		C4EEF11E24FFB5AF0040F496 /* GWExcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF11D24FFB5AF0040F496 /* GWExcelModel.m */; };
+		C4EEF12124FFB5D60040F496 /* GWExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12024FFB5D60040F496 /* GWExcelView.m */; };
+		C4EEF12724FFB60A0040F496 /* GWExcelTabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12624FFB60A0040F496 /* GWExcelTabelView.m */; };
+		C4EEF12A24FFC3130040F496 /* GWExcelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12924FFC3130040F496 /* GWExcelHeaderView.m */; };
+		C4EEF12D24FFC6980040F496 /* GWExcelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12C24FFC6980040F496 /* GWExcelTableViewCell.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C4EEF10024FF73300040F496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4EEF0DC24FF732C0040F496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4EEF0E324FF732C0040F496;
+			remoteInfo = GWExcel;
+		};
+		C4EEF10B24FF73300040F496 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C4EEF0DC24FF732C0040F496 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4EEF0E324FF732C0040F496;
+			remoteInfo = GWExcel;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GWExcelHeaderLeftCell.xib; sourceTree = "<group>"; };
+		C436F66E25020CD000E65BEB /* GWExcelShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelShadowView.h; sourceTree = "<group>"; };
+		C436F66F25020CD000E65BEB /* GWExcelShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelShadowView.m; sourceTree = "<group>"; };
+		C4768C652500A14100D64FA7 /* GW_AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_AutoLayout.h; sourceTree = "<group>"; };
+		C4768C672500A14100D64FA7 /* UIView+GW_AutoLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+GW_AutoLayout.m"; sourceTree = "<group>"; };
+		C4768C692500A14100D64FA7 /* GW_AutoLayoutUtilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_AutoLayoutUtilities.h; sourceTree = "<group>"; };
+		C4768C6A2500A14100D64FA7 /* UIView+GW_AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+GW_AutoLayout.h"; sourceTree = "<group>"; };
+		C4768C6D2500A16F00D64FA7 /* GWHeader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWHeader.h; sourceTree = "<group>"; };
+		C4768C732500EBED00D64FA7 /* GWExcelHeaderLeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelHeaderLeftCell.h; sourceTree = "<group>"; };
+		C4768C742500EBED00D64FA7 /* GWExcelHeaderLeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelHeaderLeftCell.m; sourceTree = "<group>"; };
+		C4768C782500EC0D00D64FA7 /* GWExcelHeaderRightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelHeaderRightCell.h; sourceTree = "<group>"; };
+		C4768C792500EC0D00D64FA7 /* GWExcelHeaderRightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelHeaderRightCell.m; sourceTree = "<group>"; };
+		C4768C7D2500ECBD00D64FA7 /* GWExcelConcentLeftCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelConcentLeftCell.h; sourceTree = "<group>"; };
+		C4768C7E2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelConcentLeftCell.m; sourceTree = "<group>"; };
+		C4768C802500ECD100D64FA7 /* GWExcelConcentRightCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelConcentRightCell.h; sourceTree = "<group>"; };
+		C4768C812500ECD100D64FA7 /* GWExcelConcentRightCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelConcentRightCell.m; sourceTree = "<group>"; };
+		C4EEF0E424FF732C0040F496 /* GWExcel.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GWExcel.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EEF0E724FF732C0040F496 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		C4EEF0E824FF732C0040F496 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		C4EEF0ED24FF732C0040F496 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		C4EEF0EE24FF732C0040F496 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		C4EEF0F124FF732C0040F496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		C4EEF0F324FF73300040F496 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		C4EEF0F624FF73300040F496 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		C4EEF0F824FF73300040F496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EEF0F924FF73300040F496 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		C4EEF0FF24FF73300040F496 /* GWExcelTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWExcelTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EEF10324FF73300040F496 /* GWExcelTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelTests.m; sourceTree = "<group>"; };
+		C4EEF10524FF73300040F496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EEF10A24FF73300040F496 /* GWExcelUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GWExcelUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C4EEF10E24FF73300040F496 /* GWExcelUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelUITests.m; sourceTree = "<group>"; };
+		C4EEF11024FF73300040F496 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		C4EEF11C24FFB5AF0040F496 /* GWExcelModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelModel.h; sourceTree = "<group>"; };
+		C4EEF11D24FFB5AF0040F496 /* GWExcelModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelModel.m; sourceTree = "<group>"; };
+		C4EEF11F24FFB5D60040F496 /* GWExcelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelView.h; sourceTree = "<group>"; };
+		C4EEF12024FFB5D60040F496 /* GWExcelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelView.m; sourceTree = "<group>"; };
+		C4EEF12524FFB60A0040F496 /* GWExcelTabelView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelTabelView.h; sourceTree = "<group>"; };
+		C4EEF12624FFB60A0040F496 /* GWExcelTabelView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelTabelView.m; sourceTree = "<group>"; };
+		C4EEF12824FFC3130040F496 /* GWExcelHeaderView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelHeaderView.h; sourceTree = "<group>"; };
+		C4EEF12924FFC3130040F496 /* GWExcelHeaderView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelHeaderView.m; sourceTree = "<group>"; };
+		C4EEF12B24FFC6980040F496 /* GWExcelTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelTableViewCell.h; sourceTree = "<group>"; };
+		C4EEF12C24FFC6980040F496 /* GWExcelTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelTableViewCell.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		C4EEF0E124FF732C0040F496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF0FC24FF73300040F496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF10724FF73300040F496 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C40D11FD2505C4A100E30EFA /* GWExcelOther */ = {
+			isa = PBXGroup;
+			children = (
+				C4768C802500ECD100D64FA7 /* GWExcelConcentRightCell.h */,
+				C4768C812500ECD100D64FA7 /* GWExcelConcentRightCell.m */,
+				C4768C7D2500ECBD00D64FA7 /* GWExcelConcentLeftCell.h */,
+				C4768C7E2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m */,
+				C4768C782500EC0D00D64FA7 /* GWExcelHeaderRightCell.h */,
+				C4768C792500EC0D00D64FA7 /* GWExcelHeaderRightCell.m */,
+				C4768C732500EBED00D64FA7 /* GWExcelHeaderLeftCell.h */,
+				C4768C742500EBED00D64FA7 /* GWExcelHeaderLeftCell.m */,
+				C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */,
+			);
+			path = GWExcelOther;
+			sourceTree = "<group>";
+		};
+		C436F67125022A0100E65BEB /* GWExcelKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEF12824FFC3130040F496 /* GWExcelHeaderView.h */,
+				C4EEF12924FFC3130040F496 /* GWExcelHeaderView.m */,
+				C4EEF11C24FFB5AF0040F496 /* GWExcelModel.h */,
+				C4EEF11D24FFB5AF0040F496 /* GWExcelModel.m */,
+				C436F66E25020CD000E65BEB /* GWExcelShadowView.h */,
+				C436F66F25020CD000E65BEB /* GWExcelShadowView.m */,
+				C4EEF12524FFB60A0040F496 /* GWExcelTabelView.h */,
+				C4EEF12624FFB60A0040F496 /* GWExcelTabelView.m */,
+				C4EEF12B24FFC6980040F496 /* GWExcelTableViewCell.h */,
+				C4EEF12C24FFC6980040F496 /* GWExcelTableViewCell.m */,
+				C4EEF11F24FFB5D60040F496 /* GWExcelView.h */,
+				C4EEF12024FFB5D60040F496 /* GWExcelView.m */,
+			);
+			path = GWExcelKit;
+			sourceTree = "<group>";
+		};
+		C4768C642500A14100D64FA7 /* GW_AutoLayoutKit */ = {
+			isa = PBXGroup;
+			children = (
+				C4768C652500A14100D64FA7 /* GW_AutoLayout.h */,
+				C4768C692500A14100D64FA7 /* GW_AutoLayoutUtilities.h */,
+				C4768C6A2500A14100D64FA7 /* UIView+GW_AutoLayout.h */,
+				C4768C672500A14100D64FA7 /* UIView+GW_AutoLayout.m */,
+			);
+			path = GW_AutoLayoutKit;
+			sourceTree = "<group>";
+		};
+		C4EEF0DB24FF732C0040F496 = {
+			isa = PBXGroup;
+			children = (
+				C4EEF0E624FF732C0040F496 /* GWExcel */,
+				C4EEF10224FF73300040F496 /* GWExcelTests */,
+				C4EEF10D24FF73300040F496 /* GWExcelUITests */,
+				C4EEF0E524FF732C0040F496 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		C4EEF0E524FF732C0040F496 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEF0E424FF732C0040F496 /* GWExcel.app */,
+				C4EEF0FF24FF73300040F496 /* GWExcelTests.xctest */,
+				C4EEF10A24FF73300040F496 /* GWExcelUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		C4EEF0E624FF732C0040F496 /* GWExcel */ = {
+			isa = PBXGroup;
+			children = (
+				C436F67125022A0100E65BEB /* GWExcelKit */,
+				C4768C642500A14100D64FA7 /* GW_AutoLayoutKit */,
+				C4EEF0E724FF732C0040F496 /* AppDelegate.h */,
+				C4EEF0E824FF732C0040F496 /* AppDelegate.m */,
+				C4EEF0ED24FF732C0040F496 /* ViewController.h */,
+				C4EEF0EE24FF732C0040F496 /* ViewController.m */,
+				C40D11FD2505C4A100E30EFA /* GWExcelOther */,
+				C4768C6D2500A16F00D64FA7 /* GWHeader.h */,
+				C4EEF0F024FF732C0040F496 /* Main.storyboard */,
+				C4EEF0F324FF73300040F496 /* Assets.xcassets */,
+				C4EEF0F524FF73300040F496 /* LaunchScreen.storyboard */,
+				C4EEF0F824FF73300040F496 /* Info.plist */,
+				C4EEF0F924FF73300040F496 /* main.m */,
+			);
+			path = GWExcel;
+			sourceTree = "<group>";
+		};
+		C4EEF10224FF73300040F496 /* GWExcelTests */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEF10324FF73300040F496 /* GWExcelTests.m */,
+				C4EEF10524FF73300040F496 /* Info.plist */,
+			);
+			path = GWExcelTests;
+			sourceTree = "<group>";
+		};
+		C4EEF10D24FF73300040F496 /* GWExcelUITests */ = {
+			isa = PBXGroup;
+			children = (
+				C4EEF10E24FF73300040F496 /* GWExcelUITests.m */,
+				C4EEF11024FF73300040F496 /* Info.plist */,
+			);
+			path = GWExcelUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		C4EEF0E324FF732C0040F496 /* GWExcel */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EEF11324FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcel" */;
+			buildPhases = (
+				C4EEF0E024FF732C0040F496 /* Sources */,
+				C4EEF0E124FF732C0040F496 /* Frameworks */,
+				C4EEF0E224FF732C0040F496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GWExcel;
+			productName = GWExcel;
+			productReference = C4EEF0E424FF732C0040F496 /* GWExcel.app */;
+			productType = "com.apple.product-type.application";
+		};
+		C4EEF0FE24FF73300040F496 /* GWExcelTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EEF11624FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcelTests" */;
+			buildPhases = (
+				C4EEF0FB24FF73300040F496 /* Sources */,
+				C4EEF0FC24FF73300040F496 /* Frameworks */,
+				C4EEF0FD24FF73300040F496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4EEF10124FF73300040F496 /* PBXTargetDependency */,
+			);
+			name = GWExcelTests;
+			productName = GWExcelTests;
+			productReference = C4EEF0FF24FF73300040F496 /* GWExcelTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		C4EEF10924FF73300040F496 /* GWExcelUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4EEF11924FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcelUITests" */;
+			buildPhases = (
+				C4EEF10624FF73300040F496 /* Sources */,
+				C4EEF10724FF73300040F496 /* Frameworks */,
+				C4EEF10824FF73300040F496 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C4EEF10C24FF73300040F496 /* PBXTargetDependency */,
+			);
+			name = GWExcelUITests;
+			productName = GWExcelUITests;
+			productReference = C4EEF10A24FF73300040F496 /* GWExcelUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		C4EEF0DC24FF732C0040F496 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1160;
+				ORGANIZATIONNAME = gw;
+				TargetAttributes = {
+					C4EEF0E324FF732C0040F496 = {
+						CreatedOnToolsVersion = 11.6;
+					};
+					C4EEF0FE24FF73300040F496 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C4EEF0E324FF732C0040F496;
+					};
+					C4EEF10924FF73300040F496 = {
+						CreatedOnToolsVersion = 11.6;
+						TestTargetID = C4EEF0E324FF732C0040F496;
+					};
+				};
+			};
+			buildConfigurationList = C4EEF0DF24FF732C0040F496 /* Build configuration list for PBXProject "GWExcel" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = C4EEF0DB24FF732C0040F496;
+			productRefGroup = C4EEF0E524FF732C0040F496 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				C4EEF0E324FF732C0040F496 /* GWExcel */,
+				C4EEF0FE24FF73300040F496 /* GWExcelTests */,
+				C4EEF10924FF73300040F496 /* GWExcelUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		C4EEF0E224FF732C0040F496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EEF0F724FF73300040F496 /* LaunchScreen.storyboard in Resources */,
+				C40D11E92505BF5300E30EFA /* GWExcelHeaderLeftCell.xib in Resources */,
+				C4EEF0F424FF73300040F496 /* Assets.xcassets in Resources */,
+				C4EEF0F224FF732C0040F496 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF0FD24FF73300040F496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF10824FF73300040F496 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		C4EEF0E024FF732C0040F496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4768C822500ECD100D64FA7 /* GWExcelConcentRightCell.m in Sources */,
+				C4EEF0EF24FF732C0040F496 /* ViewController.m in Sources */,
+				C4768C762500EBED00D64FA7 /* GWExcelHeaderLeftCell.m in Sources */,
+				C4768C6B2500A14200D64FA7 /* UIView+GW_AutoLayout.m in Sources */,
+				C4EEF12A24FFC3130040F496 /* GWExcelHeaderView.m in Sources */,
+				C4EEF12124FFB5D60040F496 /* GWExcelView.m in Sources */,
+				C436F67025020CD000E65BEB /* GWExcelShadowView.m in Sources */,
+				C4EEF12724FFB60A0040F496 /* GWExcelTabelView.m in Sources */,
+				C4EEF11E24FFB5AF0040F496 /* GWExcelModel.m in Sources */,
+				C4768C7F2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m in Sources */,
+				C4EEF0E924FF732C0040F496 /* AppDelegate.m in Sources */,
+				C4EEF0FA24FF73300040F496 /* main.m in Sources */,
+				C4768C7B2500EC0D00D64FA7 /* GWExcelHeaderRightCell.m in Sources */,
+				C4EEF12D24FFC6980040F496 /* GWExcelTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF0FB24FF73300040F496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EEF10424FF73300040F496 /* GWExcelTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C4EEF10624FF73300040F496 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C4EEF10F24FF73300040F496 /* GWExcelUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		C4EEF10124FF73300040F496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4EEF0E324FF732C0040F496 /* GWExcel */;
+			targetProxy = C4EEF10024FF73300040F496 /* PBXContainerItemProxy */;
+		};
+		C4EEF10C24FF73300040F496 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = C4EEF0E324FF732C0040F496 /* GWExcel */;
+			targetProxy = C4EEF10B24FF73300040F496 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C4EEF0F024FF732C0040F496 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EEF0F124FF732C0040F496 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		C4EEF0F524FF73300040F496 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C4EEF0F624FF73300040F496 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		C4EEF11124FF73300040F496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		C4EEF11224FF73300040F496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4EEF11424FF73300040F496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/GWExcel/GWHeader.h";
+				INFOPLIST_FILE = GWExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C4EEF11524FF73300040F496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/GWExcel/GWHeader.h";
+				INFOPLIST_FILE = GWExcel/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		C4EEF11724FF73300040F496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GWExcelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GWExcel.app/GWExcel";
+			};
+			name = Debug;
+		};
+		C4EEF11824FF73300040F496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GWExcelTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcelTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GWExcel.app/GWExcel";
+			};
+			name = Release;
+		};
+		C4EEF11A24FF73300040F496 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GWExcelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GWExcel;
+			};
+			name = Debug;
+		};
+		C4EEF11B24FF73300040F496 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = GWExcelUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcelUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = GWExcel;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		C4EEF0DF24FF732C0040F496 /* Build configuration list for PBXProject "GWExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EEF11124FF73300040F496 /* Debug */,
+				C4EEF11224FF73300040F496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EEF11324FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcel" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EEF11424FF73300040F496 /* Debug */,
+				C4EEF11524FF73300040F496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EEF11624FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcelTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EEF11724FF73300040F496 /* Debug */,
+				C4EEF11824FF73300040F496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4EEF11924FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcelUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4EEF11A24FF73300040F496 /* Debug */,
+				C4EEF11B24FF73300040F496 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = C4EEF0DC24FF732C0040F496 /* Project object */;
+}
