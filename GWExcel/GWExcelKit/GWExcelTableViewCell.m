@@ -99,6 +99,13 @@
 
 - (void)scrollViewWillEndDragging:(UIScrollView *)scrollView withVelocity:(CGPoint)velocity targetContentOffset:(inout CGPoint *)targetContentOffset {
    [self scrollNotification:scrollView];
+    
+    if (scrollView == _excelRightCollectionV && _excelModel.pagingEnabled) {
+        CGPoint targetOffset = [self nearestTargetOffsetForOffset:*targetContentOffset];
+        targetContentOffset->x = targetOffset.x;
+        targetContentOffset->y = targetOffset.y;
+        
+    }
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -107,7 +114,7 @@
 }
 
 - (CGPoint)nearestTargetOffsetForOffset:(CGPoint)offset {
-    CGFloat pageSize =_excelModel.sheetRightTableWidth*2;
+    CGFloat pageSize =_excelModel.sheetRightTableWidth;
     NSInteger page = roundf(offset.x / pageSize);
     CGFloat targetX = pageSize * page;
     return CGPointMake(targetX, offset.y);

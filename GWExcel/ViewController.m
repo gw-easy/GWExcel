@@ -58,6 +58,7 @@
     _exModel.leftTableCount = _fixedList.count;
     _exModel.rightTableCount = _fixedColumnList.count-1;
     _exModel.excelRealyWidth = self.view.bounds.size.width-20;
+    _exModel.pagingEnabled = YES;
     _exModel.showScrollShadow = YES;
     _exView = [[GWExcelView alloc] initWithFrame:CGRectZero model:_exModel delegate:self];
     [self.view addSubview:_exView];

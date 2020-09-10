@@ -8,6 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		C40D11E92505BF5300E30EFA /* GWExcelHeaderLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */; };
+		C40D120F2505D1F000E30EFA /* GWExcelConcentRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C812500ECD100D64FA7 /* GWExcelConcentRightCell.m */; };
+		C40D12102505D1F000E30EFA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0EE24FF732C0040F496 /* ViewController.m */; };
+		C40D12112505D1F000E30EFA /* GWExcelHeaderLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C742500EBED00D64FA7 /* GWExcelHeaderLeftCell.m */; };
+		C40D12122505D1F000E30EFA /* UIView+GW_AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C672500A14100D64FA7 /* UIView+GW_AutoLayout.m */; };
+		C40D12132505D1F000E30EFA /* GWExcelHeaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12924FFC3130040F496 /* GWExcelHeaderView.m */; };
+		C40D12142505D1F000E30EFA /* GWExcelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12024FFB5D60040F496 /* GWExcelView.m */; };
+		C40D12152505D1F000E30EFA /* GWExcelShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C436F66F25020CD000E65BEB /* GWExcelShadowView.m */; };
+		C40D12162505D1F000E30EFA /* GWExcelTabelView.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12624FFB60A0040F496 /* GWExcelTabelView.m */; };
+		C40D12172505D1F000E30EFA /* GWExcelModel.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF11D24FFB5AF0040F496 /* GWExcelModel.m */; };
+		C40D12182505D1F000E30EFA /* GWExcelConcentLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C7E2500ECBD00D64FA7 /* GWExcelConcentLeftCell.m */; };
+		C40D12192505D1F000E30EFA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0E824FF732C0040F496 /* AppDelegate.m */; };
+		C40D121A2505D1F000E30EFA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF0F924FF73300040F496 /* main.m */; };
+		C40D121B2505D1F000E30EFA /* GWExcelHeaderRightCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C792500EC0D00D64FA7 /* GWExcelHeaderRightCell.m */; };
+		C40D121C2505D1F000E30EFA /* GWExcelTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4EEF12C24FFC6980040F496 /* GWExcelTableViewCell.m */; };
+		C40D121F2505D1F000E30EFA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F524FF73300040F496 /* LaunchScreen.storyboard */; };
+		C40D12202505D1F000E30EFA /* GWExcelHeaderLeftCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */; };
+		C40D12212505D1F000E30EFA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F324FF73300040F496 /* Assets.xcassets */; };
+		C40D12222505D1F000E30EFA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C4EEF0F024FF732C0040F496 /* Main.storyboard */; };
 		C436F67025020CD000E65BEB /* GWExcelShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = C436F66F25020CD000E65BEB /* GWExcelShadowView.m */; };
 		C4768C6B2500A14200D64FA7 /* UIView+GW_AutoLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C672500A14100D64FA7 /* UIView+GW_AutoLayout.m */; };
 		C4768C762500EBED00D64FA7 /* GWExcelHeaderLeftCell.m in Sources */ = {isa = PBXBuildFile; fileRef = C4768C742500EBED00D64FA7 /* GWExcelHeaderLeftCell.m */; };
@@ -48,6 +66,7 @@
 
 /* Begin PBXFileReference section */
 		C40D11E82505BF5300E30EFA /* GWExcelHeaderLeftCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GWExcelHeaderLeftCell.xib; sourceTree = "<group>"; };
+		C40D12262505D1F000E30EFA /* GWExcelSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GWExcelSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C436F66E25020CD000E65BEB /* GWExcelShadowView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GWExcelShadowView.h; sourceTree = "<group>"; };
 		C436F66F25020CD000E65BEB /* GWExcelShadowView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GWExcelShadowView.m; sourceTree = "<group>"; };
 		C4768C652500A14100D64FA7 /* GW_AutoLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GW_AutoLayout.h; sourceTree = "<group>"; };
@@ -92,6 +111,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		C40D121D2505D1F000E30EFA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4EEF0E124FF732C0040F496 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -178,6 +204,7 @@
 				C4EEF0E424FF732C0040F496 /* GWExcel.app */,
 				C4EEF0FF24FF73300040F496 /* GWExcelTests.xctest */,
 				C4EEF10A24FF73300040F496 /* GWExcelUITests.xctest */,
+				C40D12262505D1F000E30EFA /* GWExcelSwift.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -223,6 +250,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		C40D120D2505D1F000E30EFA /* GWExcelSwift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C40D12232505D1F000E30EFA /* Build configuration list for PBXNativeTarget "GWExcelSwift" */;
+			buildPhases = (
+				C40D120E2505D1F000E30EFA /* Sources */,
+				C40D121D2505D1F000E30EFA /* Frameworks */,
+				C40D121E2505D1F000E30EFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GWExcelSwift;
+			productName = GWExcel;
+			productReference = C40D12262505D1F000E30EFA /* GWExcelSwift.app */;
+			productType = "com.apple.product-type.application";
+		};
 		C4EEF0E324FF732C0040F496 /* GWExcel */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = C4EEF11324FF73300040F496 /* Build configuration list for PBXNativeTarget "GWExcel" */;
@@ -314,11 +358,23 @@
 				C4EEF0E324FF732C0040F496 /* GWExcel */,
 				C4EEF0FE24FF73300040F496 /* GWExcelTests */,
 				C4EEF10924FF73300040F496 /* GWExcelUITests */,
+				C40D120D2505D1F000E30EFA /* GWExcelSwift */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		C40D121E2505D1F000E30EFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40D121F2505D1F000E30EFA /* LaunchScreen.storyboard in Resources */,
+				C40D12202505D1F000E30EFA /* GWExcelHeaderLeftCell.xib in Resources */,
+				C40D12212505D1F000E30EFA /* Assets.xcassets in Resources */,
+				C40D12222505D1F000E30EFA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4EEF0E224FF732C0040F496 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -347,6 +403,27 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		C40D120E2505D1F000E30EFA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C40D120F2505D1F000E30EFA /* GWExcelConcentRightCell.m in Sources */,
+				C40D12102505D1F000E30EFA /* ViewController.m in Sources */,
+				C40D12112505D1F000E30EFA /* GWExcelHeaderLeftCell.m in Sources */,
+				C40D12122505D1F000E30EFA /* UIView+GW_AutoLayout.m in Sources */,
+				C40D12132505D1F000E30EFA /* GWExcelHeaderView.m in Sources */,
+				C40D12142505D1F000E30EFA /* GWExcelView.m in Sources */,
+				C40D12152505D1F000E30EFA /* GWExcelShadowView.m in Sources */,
+				C40D12162505D1F000E30EFA /* GWExcelTabelView.m in Sources */,
+				C40D12172505D1F000E30EFA /* GWExcelModel.m in Sources */,
+				C40D12182505D1F000E30EFA /* GWExcelConcentLeftCell.m in Sources */,
+				C40D12192505D1F000E30EFA /* AppDelegate.m in Sources */,
+				C40D121A2505D1F000E30EFA /* main.m in Sources */,
+				C40D121B2505D1F000E30EFA /* GWExcelHeaderRightCell.m in Sources */,
+				C40D121C2505D1F000E30EFA /* GWExcelTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		C4EEF0E024FF732C0040F496 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -419,6 +496,40 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		C40D12242505D1F000E30EFA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/GWExcel/GWHeader.h";
+				INFOPLIST_FILE = "GWExcel copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		C40D12252505D1F000E30EFA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = "${SRCROOT}/GWExcel/GWHeader.h";
+				INFOPLIST_FILE = "GWExcel copy-Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = gw.GWExcel;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		C4EEF11124FF73300040F496 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -638,6 +749,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		C40D12232505D1F000E30EFA /* Build configuration list for PBXNativeTarget "GWExcelSwift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C40D12242505D1F000E30EFA /* Debug */,
+				C40D12252505D1F000E30EFA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C4EEF0DF24FF732C0040F496 /* Build configuration list for PBXProject "GWExcel" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
