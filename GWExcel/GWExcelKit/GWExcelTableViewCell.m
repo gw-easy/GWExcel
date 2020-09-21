@@ -106,6 +106,7 @@
         targetContentOffset->y = targetOffset.y;
         
     }
+
 }
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
@@ -157,15 +158,15 @@
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelCollectionView:cellForItemAtIndexPath:isLeft:)]) {
-        return [_delegate GWExcelCollectionView:collectionView cellForItemAtIndexPath:[NSIndexPath indexPathForRow:indexPath.row inSection:_indexPath.row] isLeft:(collectionView == _excelLeftCollectionV)];
+    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelCollectionView:tableViewIndexPath:CellForItemAtIndexPath:isLeft:)]) {
+        return [_delegate GWExcelCollectionView:collectionView tableViewIndexPath:_indexPath CellForItemAtIndexPath:indexPath isLeft:(collectionView == _excelLeftCollectionV)];
     }
     return nil;
 }
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelCollectionViewRightViewDidSelectItemAtIndexPath:)]) {
-        [_delegate GWExcelCollectionViewRightViewDidSelectItemAtIndexPath:indexPath];
+    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelCollectionViewDidSelectTableViewIndexPath:itemAtIndexPath:isLeft:)]) {
+        [_delegate GWExcelCollectionViewDidSelectTableViewIndexPath:_indexPath itemAtIndexPath:indexPath isLeft:(collectionView == _excelLeftCollectionV)];
     }
 }
 

@@ -81,7 +81,7 @@
     return _fixedList.count;
 }
 
-- (nonnull UICollectionViewCell *)GWExcelCollectionView:(nonnull UICollectionView *)collectionView cellForItemAtIndexPath:(nonnull NSIndexPath *)indexPath isLeft:(BOOL)isLeft {
+- (UICollectionViewCell *)GWExcelCollectionView:(UICollectionView *)collectionView tableViewIndexPath:(NSIndexPath *)tableIndexPath CellForItemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft {
     if (isLeft) {
         GWExcelConcentLeftCell *leftCell = [collectionView dequeueReusableCellWithReuseIdentifier:@"GWExcelConcentLeftCell" forIndexPath:indexPath];
         leftCell.title.text = _fixedList[indexPath.section][0];

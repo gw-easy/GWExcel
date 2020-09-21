@@ -47,7 +47,7 @@
     _excelLeftCollectionV.delegate = self;
     _excelLeftCollectionV.dataSource = self;
     _excelLeftCollectionV.showsHorizontalScrollIndicator = NO;
-    _excelLeftCollectionV.bounces = _excelModel.bounces;
+    _excelLeftCollectionV.bounces = NO;
     _excelLeftCollectionV.backgroundColor = self.backgroundColor;
     [self addSubview:_excelLeftCollectionV];
     
@@ -59,7 +59,7 @@
     _excelRightCollectionV.delegate = self;
     _excelRightCollectionV.dataSource = self;
     _excelRightCollectionV.showsHorizontalScrollIndicator = NO;
-    _excelRightCollectionV.bounces = _excelModel.bounces;
+    _excelRightCollectionV.bounces = NO;
     _excelRightCollectionV.backgroundColor = self.backgroundColor;
 
     [self addSubview:_excelRightCollectionV];
@@ -103,6 +103,7 @@
         targetContentOffset->y = targetOffset.y;
         
     }
+
 }
 
 - (CGPoint)nearestTargetOffsetForOffset:(CGPoint)offset {
@@ -111,6 +112,7 @@
     CGFloat targetX = pageSize * page;
     return CGPointMake(targetX, offset.y);
 }
+
 
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
     _isAllowedNotification = NO;
@@ -154,8 +156,8 @@
     return nil;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelHeaderRightViewDidSelectItemAtIndexPath:)]) {
-        [_delegate GWExcelHeaderRightViewDidSelectItemAtIndexPath:indexPath];
+    if (_delegate && [_delegate respondsToSelector:@selector(GWExcelHeaderViewDidSelectItemAtIndexPath:isLeft:)]) {
+        [_delegate GWExcelHeaderViewDidSelectItemAtIndexPath:indexPath isLeft:(collectionView == _excelLeftCollectionV)];
     }
 }
 

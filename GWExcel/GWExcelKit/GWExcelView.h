@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "GWExcelModel.h"
-#import "GWExcelTabelView.h"
 #import "GWExcelHeaderView.h"
 #import "GWExcelTableViewCell.h"
 NS_ASSUME_NONNULL_BEGIN
@@ -16,12 +15,10 @@ NS_ASSUME_NONNULL_BEGIN
 @protocol GWExcelViewDelegate <GWExcelTableViewCellDelegate,GWExcelHeaderViewDelegate>
 
 @optional
-
 /// 每列有多少行
 /// @param tableView tableView description
 /// @param section section description
 - (NSInteger)GWExcelTableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
-
 
 /// cell将要显示
 /// @param tableView tableView description
@@ -29,18 +26,25 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param indexPath indexPath description
 - (void)GWExcelTableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath;
 
-
 /// section的header
 /// @param tableView tableView description
 /// @param section section description
 - (UIView *)GWExcelTableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section;
-
 
 /// section的header的高
 /// @param tableView tableView description
 /// @param section section description
 - (CGFloat)GWExcelTableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section;
 
+/// section的Footer
+/// @param tableView tableView description
+/// @param section section description
+- (UIView *)GWExcelTableView:(UITableView *)tableView viewForFooterInSection:(NSInteger)section;
+
+/// section的Footer的高
+/// @param tableView tableView description
+/// @param section section description
+- (CGFloat)GWExcelTableView:(UITableView *)tableView heightForFooterInSection:(NSInteger)section;
 
 /// tableview滚动事件
 /// @param scrollView scrollView description
@@ -57,14 +61,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (weak, nonatomic) id<GWExcelViewDelegate> delegate;
 
-- (instancetype)init NS_UNAVAILABLE;
 
-- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
 
 /// 初始化
 /// @param frame frame
 /// @param model model description
 - (instancetype)initWithFrame:(CGRect)frame model:(GWExcelModel *)model delegate:(id)delegate;
+
+- (instancetype)init NS_UNAVAILABLE;
+
+- (instancetype)initWithFrame:(CGRect)frame NS_UNAVAILABLE;
+
 
 //刷新
 - (void)reloadData;

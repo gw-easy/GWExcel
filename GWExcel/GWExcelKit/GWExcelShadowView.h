@@ -13,8 +13,6 @@ NS_ASSUME_NONNULL_BEGIN
 @interface GWExcelShadowView : UIView
 
 @property (strong, nonatomic) CAGradientLayer *gradientLayer;
-
-
 /// 初始化
 /// @param frame frame description
 /// @param excelModel excelModel description

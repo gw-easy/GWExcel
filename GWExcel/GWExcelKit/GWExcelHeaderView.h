@@ -11,12 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol GWExcelHeaderViewDelegate <NSObject>
-
 /// header 注册cell
 /// @param collectionView collectionView description
 /// @param isLeft 是否是左滑动
 - (void)GWExcelHeaderRegisterCollectionView:(UICollectionView *)collectionView isLeft:(BOOL)isLeft;
-
 
 /// header cell
 /// @param collectionView collectionView description
@@ -25,11 +23,10 @@ NS_ASSUME_NONNULL_BEGIN
 - (UICollectionViewCell *)GWExcelHeaderCollectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft;
 
 @optional
-
 /// header 点击item
 /// @param indexPath indexPath description
-- (void)GWExcelHeaderRightViewDidSelectItemAtIndexPath:(NSIndexPath *)indexPath;
-
+/// @param isLeft 是否是左滑动
+- (void)GWExcelHeaderViewDidSelectItemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft;
 
 /// header cell size
 /// @param collectionView collectionView description

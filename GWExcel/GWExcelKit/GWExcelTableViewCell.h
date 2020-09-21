@@ -11,31 +11,29 @@
 NS_ASSUME_NONNULL_BEGIN
 @class GWExcelTableViewCell;
 @protocol GWExcelTableViewCellDelegate<NSObject>
-
 /// 注册cell
 /// @param collectionView collectionView description
 /// @param isLeft 是否为左侧
 - (void)GWExcelRegisterCollectionView:(UICollectionView *)collectionView isLeft:(BOOL)isLeft;
 
-
 /// cell
 /// @param collectionView collectionView description
+/// @param tableIndexPath 父类cell indexpath
 /// @param indexPath indexPath description
 /// @param isLeft 是否是左侧
+- (UICollectionViewCell *)GWExcelCollectionView:(UICollectionView *)collectionView tableViewIndexPath:(NSIndexPath *)tableIndexPath CellForItemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft;
 
-- (UICollectionViewCell *)GWExcelCollectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft;
 @optional
-
 /// cell size
 /// @param collectionView collectionView description
 /// @param collectionViewLayout collectionViewLayout description
 /// @param indexPath indexPath description
 - (CGSize)GWExcelCollectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath;
 
-
 /// cell 点击
 /// @param indexPath indexPath description
-- (void)GWExcelCollectionViewRightViewDidSelectItemAtIndexPath:(NSIndexPath *)indexPath;
+/// @param isLeft 是否是左侧
+- (void)GWExcelCollectionViewDidSelectTableViewIndexPath:(NSIndexPath *)tableIndexPath itemAtIndexPath:(NSIndexPath *)indexPath isLeft:(BOOL)isLeft;
 @end
 
 @interface GWExcelTableViewCell : UITableViewCell
