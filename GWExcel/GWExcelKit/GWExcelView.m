@@ -155,8 +155,13 @@
         _excelTableView.dataSource = self;
         _excelTableView.delegate = self;
         _excelTableView.backgroundColor = [UIColor clearColor];
-
         _excelTableView.bounces = _excelModel.bounces;
+        if (@available(iOS 11.0, *)) {
+            _excelTableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+            _excelTableView.estimatedRowHeight =0;
+            _excelTableView.estimatedSectionHeaderHeight =0;
+            _excelTableView.estimatedSectionFooterHeight =0;
+        }
         [self addSubview:_excelTableView];
     }
     return _excelTableView;;
